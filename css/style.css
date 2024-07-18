@@ -1,0 +1,369 @@
+ /* Reset des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Nav Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #ffd700;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Home section */
+.home {
+    height: 100vh;
+    background: url(../res/bg-light.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: slideInUp 1s ease;
+}
+
+.home .btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    animation: zoomIn 1s ease;
+}
+
+.home .btn:hover {
+    background-color: #ffc800;
+}
+
+/* À propos section */
+.about {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease;
+    background-color: #111;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    animation: slideInUp 1s ease;
+}
+
+/* Services sections */
+.services {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+}
+
+.services .services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service-box {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: zoomIn 1s ease;
+    margin: 15px;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555; 
+}
+
+.service-box .btn {
+    background-color: #ffd700;
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-box .btn:hover {
+    background-color: #ffc800;
+}
+
+#services {
+    background: url('../res/4K\ WALLPAPER\ FOR\ DESKTOP\ __\ PORSCHE\ WALLPAPER.jpeg') center/cover no-repeat;
+}
+
+/* Styles des boutons */
+.btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #333;
+    padding: 12px 24px; 
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ffd700; 
+    border-radius: 30px; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffc800; 
+    border-color: #ffc800; 
+    color: #333; 
+}
+
+
+.service-box .btn {
+    padding: 10px 20px; 
+}
+
+
+/* Footer section */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+}
+
+.social-links img {
+    width: 40px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 300px;
+        background-color: #111;
+        padding-top: 80px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-links ul.active {
+        right: 0;
+    }
+
+    .nav-links ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1500;
+    }
+
+    .burger .line {
+        background-color: #fff;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .burger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    }
+
+    .car {
+        height: 400px;
+    }
+
+    .car-content h2 {
+        font-size: 2rem;
+    }
+
+    .car-content p {
+        font-size: 1rem;
+    }
+}
