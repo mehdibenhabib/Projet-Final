@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - LUXECar</title>
+<link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">LUXEcar</a>
+        <div class="nav-links">
+            <ul class="nav-list">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li><a href="../html/index.html">À Propos</a></li>
+                <li><a href="../html/index.html">Services</a></li>
+                <li><a href="../html/voitures.html">Véhicules</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contact -->
+<div class="contact-container">
+    <form>
+        <h1>Contact us</h1>
+        <input type="text" id="firstname" placeholder="Nom" required>
+        <input type="text" id="lastname" placeholder="Prenom" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Telephone" required>
+        <h4>Tapez votre message ici</h4>
+        <textarea required></textarea>
+        <input type="submit" value="Send" id="submit-btn">
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="keys-pic">
+           <h2>Nos Partenaires</h2>
+            <img id="keys" src="../res/Top-15-Luxury-Car-Brands.png" alt="">
+        </div>
+        <div class="footer-section">
+            <h2>Nos Services</h2>
+            <ul>
+              <li><a href="../html/voitures.html">Vente de Voitures</a></li>
+              <li><a href="../html/voitures.html">Location de Voitures</a></li>
+              <li><a href="../html/contact.html">Service Client</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Suivez-nous</h2>
+            <div class="social-links">
+              <a href="https://fr-fr.facebook.com/"><img src="../res/facebook.png" alt="Facebook"></a>
+              <a href="https://x.com/?lang=fr"><img src="../res/sl_z_072523_61700_01.jpg" alt="Twitter"></a>
+              <a href="https://www.instagram.com/"><img src="../res/instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 LUXEcar. Tous droits réservés.</p>
+    </div>
+  </footer>
+
 </body>
 </html>

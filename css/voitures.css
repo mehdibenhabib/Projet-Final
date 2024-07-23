@@ -63,18 +63,12 @@ body {
     color: #ffd700;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-}
 
-.burger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: transform 0.3s ease;
-}
+
+
+
+
+/* Section voitures */
 
 .main-content h2{
     margin-top: 60px;
@@ -84,8 +78,6 @@ body {
     color: #ffd700;
 }
 
-
-/* Section voitures */
 .voitures-section {
     padding: 20px 0;
 }
@@ -178,31 +170,37 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #000000;
+    background-color: #111;
     color: #fff;
-    padding: 30px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .footer-section {
     flex: 1;
     padding: 0 20px;
+    justify-content: space-around;
 }
 
+.footer-content h2,
 .footer-section h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.footer-section p {
-    font-size: 14px;
-    margin-bottom: 20px;
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
 }
 
 .footer-section ul li a {
@@ -220,33 +218,28 @@ footer {
     margin-top: 20px;
 }
 
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
 .social-links a {
+    display: inline-block;
     margin-right: 10px;
+    transition: transform 0.3s ease;
 }
 
-.footer-bottom {
-    background-color: #222;
-    color: #ccc;
-    padding: 10px 0;
+.social-links a:hover {
+    transform: translateY(-5px);
 }
 
-.footer-bottom p {
-    font-size: 14px;
-    margin: 0;
+.social-links img {
+    width: 40px;
+    height: auto;
+}
+
+#keys{
+    width: 300px ;
+    height: 200px;
+}
+ 
+.keys-pic{
+    margin-left: 170px;
 }
 
 @media (max-width: 768px) {

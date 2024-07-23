@@ -64,19 +64,6 @@ body {
     color: #ffd700;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: transform 0.3s ease;
-}
-
 /* Home section */
 .home {
     height: 100vh;
@@ -245,8 +232,10 @@ footer {
 .footer-section {
     flex: 1;
     padding: 0 20px;
+    justify-content: space-around;
 }
 
+.footer-content h2,
 .footer-section h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -289,6 +278,15 @@ footer {
 .social-links img {
     width: 40px;
     height: auto;
+}
+
+#keys{
+    width: 300px ;
+    height: 200px;
+}
+ 
+.keys-pic{
+    margin-left: 170px;
 }
 
 
